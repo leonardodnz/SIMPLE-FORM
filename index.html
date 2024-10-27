@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Forms</title>
+</head>
+
+<body>
+  <main>
+    <form action="" method="post">
+      <h2>Inscreva-se para o Evento</h2>
+
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <div class="form-group">
+          <label for="name">Nome Completo</label>
+          <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Digite seu e-mail" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Escolha suas Preferências</legend>
+
+        <div class="form-group">
+          <label>Tipo de Evento</label>
+          <select>
+            <option value="">Selecione</option>
+            <option value="Formal">Formal</option>
+            <option value="Informal">Informal</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Preferências Alimentares</label>
+          <div id="type_food">
+            <div>
+              <label>Vegetariano</label>
+              <input type="radio" name="preferences" value="Vegetariano"> 
+            </div>
+            <div>
+              <label>Vegano</label>
+              <input type="radio" name="preferences" value="Vegano"> 
+            </div>
+            <div>
+              <label>Sem Glúten</label>
+              <input type="radio" name="preferences" value="SemGluten"> 
+            </div>
+            <div>
+              <label>Carnivoro</label>
+              <input type="radio" name="preferences" value="Carnivoro"> 
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Comentários e Preferências Adicionais</legend>
+        <div>
+          <label for="comments">Comentários</label>
+          <input type="text" id="comments" placeholder="Deixe seus comentários ou Preferências aqui">
+        </div>
+      </fieldset>
+          
+      <button type="submit">Enviar Inscrição</button>
+
+    </form>
+  </main>  
+</body>
+</html>

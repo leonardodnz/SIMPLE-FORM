@@ -1,0 +1,74 @@
+:root{
+  --fild_title: 15px;
+  --normal_text: 10px;
+}
+h2{
+  text-align: center;
+}
+
+body{
+  font-family: "Poppins";
+  font-size: var(--normal_text);
+  background-color: rgb(120, 220, 248);
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: center;
+  width: fit-content;
+}
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-radius: 5px;
+  border-color: rgba(174, 174, 174, 0.818);
+}
+
+fieldset > div{
+  display: flex;
+  flex-direction: column;
+}
+
+#type_food{
+  display: flex;
+  flex-direction: column
+}
+#type_food > div{
+  display: flex;
+  align-items: center;
+}
+
+#type_food label{
+  width: 100px;
+}
+
+input[type="radio"]{
+  margin: 0;
+}
+
+input::placeholder, select{
+  font-size: var(--normal_text);
+}
+
+legend{
+  font-size: var(--fild_title);
+}
+
+button{
+  padding: 5px;
+  background-color: rgb(24, 155, 44);
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
